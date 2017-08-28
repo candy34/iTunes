@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+ .row {
+        /* display: table;
+        width: 100%;
+        table-layout: fixed;
+        border-spacing: 10px;  */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-basis: 100%;
+
+ }
+  .artist{
+      flex-basis: 30%;
+      flex-direction: column;
+      margin: 1%;
+      padding: 2%;
+      border: 2px solid #eeeeee;
+  }
+  .pic {
+    width: 100px;
+
+  }
