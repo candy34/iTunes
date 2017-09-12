@@ -1,21 +1,14 @@
 body {
-    margin: 20;
-    padding: 20;
+    margin: 10;
+    padding: 10;
     background-color: lightgray;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-basis: 100%;
 
-}
- .row {
-        /* display: table;
+.row {
+        /*display: table;
         width: 100%;
-        table-layout: fixed;
-        border-spacing: 10px;  */
+        table-layout: fixed;*/
+        border-spacing: 40px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -23,14 +16,21 @@ body {
         flex-basis: 100%;
 
  }
-  /*.artist{
+.artist{
       flex-basis: 30%;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
       margin: 1%;
       padding: 2%;
       border: 2px solid #eeeeee;
-  }*/
+}
+.songsHTML{
+  display: flex;
+  flex-basis: 50%;
+}
   .pic {
-    width: 100px;
+    width: 20px;
+
 
   }

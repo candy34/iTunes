@@ -16,25 +16,25 @@ var form = document.querySelectorAll('form')[0]
             let songs = results
               console.log(results);
               var template = "<div class=row>"
-             for(i=0; i < songs.results.length; i++) {
-               console.log(songs.results[i])
-               template +=   `<p>${songs.results[i].artistName}</p>
-                <audio play="true" controls="controls" src= "" onclick="play()" onclick="pause()"('${songs.results[i].trackViewUrl}')"></audio>
-                <p>${songs.results[i].trackName}</p>
-                <img src ="${songs.results[i].artworkUrl100}">
-                `;
-                }
-                form.innerHTML = template;
+              for(i=0; i < songs.results.length; i++) {
+                console.log(songs.results[i])
+                 template +=   `<p>${songs.results[i].artistName}</p>
+                  <audio play="true" controls="controls" src= "" onclick="play()" onclick="pause()"('${songs.results[i].trackViewUrl}')"></audio>
+                  <p>${songs.results[i].trackName}</p>
+                  <img src ="${songs.results[i].artworkUrl100}">
+                  `;
+                  }
+                  form.innerHTML = template;
 
 
 
-             return songs
-           })
+              return songs
+            })
   })
 })
 
-function getSearchResults (artist) {
-  var template =`<li>${artistName}${trackViewUrl}${trackName}</li>`;
+ function getSearchResults (artist) {
+   var template =`<li>${artistName}${trackViewUrl}${trackName}</li>`;
 
 
    template += "</ul>";
