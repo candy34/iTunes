@@ -11,15 +11,15 @@ var form = document.querySelectorAll('form')[0]
 
   getSearchResults(nameInputValue).then(function (results) {
       console.log(results)
-        event.target.querySelector('input[name="artist"]').value = ''
-        fetch("https://itunes.apple.com/search?term=").then(function(response) {
+        
+
             let songs = results
               console.log(results);
               var template = "<div class=row>"
               for(i=0; i < songs.results.length; i++) {
                 console.log(songs.results[i])
                  template +=   `<p>${songs.results[i].artistName}</p>
-                  <audio play="true" controls="controls" src= "" onclick="play()" onclick="pause()"('${songs.results[i].trackViewUrl}')"></audio>
+                  <audio play="false" controls="controls" src= "${songs.results[i].previewUrl}" onclick="play()" onclick="pause()"></audio>
                   <p>${songs.results[i].trackName}</p>
                   <img src ="${songs.results[i].artworkUrl100}">
                   `;
@@ -29,7 +29,6 @@ var form = document.querySelectorAll('form')[0]
 
 
               return songs
-            })
   })
 })
 
